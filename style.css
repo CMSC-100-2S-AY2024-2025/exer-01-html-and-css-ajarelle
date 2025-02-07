@@ -1,0 +1,105 @@
+/* General Styling */
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* border-style: solid;
+    border-width: 5px;
+    border-color: red;   */
+    justify-content: space-between;
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cyan;
+    padding: 15px 20px;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    length: 100px;
+    width: 100px;
+
+}
+
+/* Featured Photo */
+.featured-photo img {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Project Gallery */
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.project-gallery img {
+    width: 22%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+/* Skills and Autobiography */
+.skills-autobiography {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.skills, .autobiography {
+    flex: 1;
+    max-width: 500px;
+}
+
+.skills img, .autobiography img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: lightblue;
+    text-decoration: none;
+}
