@@ -39,9 +39,9 @@ body {
 /* Navigation Bar */
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    padding: 10px -20px auto;
+    padding: auto;
     color: white;
     width: 130vh;
     height: 100px;
@@ -50,12 +50,12 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 40px;
 }
 
 .nav-links li {
     display: flex;
-    padding: 12px;
+    justify-content: center;
+    padding: 30px;
 }
 
 .nav-links a {
@@ -148,12 +148,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     padding: 10px;
 
 }
 
-.projects-header h2 {
+h2 {
+    color: white;
     font-size: 4em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: #1E1E1E;
@@ -161,7 +161,7 @@ body {
     border-radius: 5px;
 }
 
-.projects-header h2:hover {
+h2:hover {
     color: gold;
 }
 
@@ -212,8 +212,8 @@ body {
 /* Skills and Autobiography */
 .skills-autobiography {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
+    gap: 5px;
     padding: 20px;
 }
 
@@ -222,9 +222,60 @@ body {
     max-width: 500px;
 }
 
-.skills img, .autobiography img {
-    width: 100%;
+.skills {
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;;
+    max-width: 500px;
     border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills:hover {
+    transform: scale(1.05);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    gap: 20px; 
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.skills-icons img {
+    width: 60px; /* Adjust size */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills-icons img:hover {
+    transform: scale(1.2); /* Adds hover effect */
+}
+
+.about-me {
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;;
+    max-width: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-me:hover {
+    transform: scale(1.05);
+}
+
+.about-me p {
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Footer */
