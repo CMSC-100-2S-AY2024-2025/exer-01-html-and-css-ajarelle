@@ -257,6 +257,11 @@ h2:hover {
     transform: scale(1.2); /* Adds hover effect */
 }
 
+.skills p {
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .about-me {
     background: white;
     border: 2px solid #ccc;
@@ -276,6 +281,11 @@ h2:hover {
 .about-me p {
     font-size: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.about-me img {
+    width: 100%;
+    height: auto;
 }
 
 /* Footer */
