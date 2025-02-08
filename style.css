@@ -23,7 +23,7 @@ body {
     justify-content: space-between;
     width: 100vw;
     height: 90px;
-    background-color: cyan;
+    background-color:#1E1E1E;
     /*
     border-style: solid;
     border-width: 5px;
@@ -39,20 +39,13 @@ body {
     padding: 10px -20px auto;
     color: white;
     width: 130vh;
-    /*
-    border-style: solid;
-    border-width: 5px;
-    border-color: blueviolet;
-    
-    */
+    height: 100px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 40px;
-    padding: 0;
-    
 }
 
 .nav-links li {
@@ -69,7 +62,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: black;
+    color: gold;
 }
 
 .nav-links img {
@@ -90,21 +83,60 @@ body {
 }
 
 .logo img:hover {
-    width: 110px;
-    height: auto;
+    content: url('images/swag_gold.png');
 }
 
 .logo {
-    width: 80vh;
+    position: relative;
+    z-index: 1000;
 }
 
 
 /* Featured Photo */
 .featured-photo img {
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
     display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.text {
+    position: absolute;
+    bottom: 60%;
+    right: 100px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 4em;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.text:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.description {
+    position: absolute;
+    bottom: 55%;
+    right: 210px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.description:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
 
 /* Project Gallery */
