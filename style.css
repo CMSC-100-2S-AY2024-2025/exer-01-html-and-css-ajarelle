@@ -1,3 +1,8 @@
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 /* General Styling */
 .container{
     display: flex;
@@ -65,14 +70,14 @@ body {
     color: gold;
 }
 
-.nav-links img {
+/* .nav-links img {
     width: 60px;
     height: 60px;
 }
 
 .nav-links img:hover {
     opacity: 0.5;
-}
+} */
 
 /* Header */
 .logo img {
@@ -139,20 +144,70 @@ body {
     background: rgba(0, 0, 0, 0.8);
 }
 
+.projects-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+
+}
+
+.projects-header h2 {
+    font-size: 4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #1E1E1E;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.projects-header h2:hover {
+    color: gold;
+}
+
 /* Project Gallery */
 .project-gallery {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-around;
+    gap: 20px;
     flex-wrap: wrap;
     margin: 20px;
 }
 
+.proj-item {
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;;
+    max-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.proj-item p {
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.proj-item:hover {
+    transform: scale(1.05);
+}
+
+
 .project-gallery img {
-    width: 22%;
-    max-width: 200px;
+    width: 300px;
     border-radius: 8px;
 }
+
+
+/*
+.project-gallery img:hover {
+    width: 400px;
+    height: auto;
+}
+*/
 
 /* Skills and Autobiography */
 .skills-autobiography {
@@ -184,3 +239,23 @@ footer a {
     color: lightblue;
     text-decoration: none;
 }
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust size */
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
